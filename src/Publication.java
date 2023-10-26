@@ -1,42 +1,37 @@
 
-
 public class Publication {
 	
-	String Author,Publication_month;
+	String Author,Publication_month,book_name;
 	int pages;
+	double book_price;
 	
-	public Publication(String author1,String publication_m,int pages ) {
-		this.Author = author1;
-		this.Publication_month = publication_m;
-		this.pages = pages;
+	public Publication(String book_name,double book_price2 ) {
+		this.book_name=book_name;
+		this.book_price = book_price2;
 	}
 
-	public String getAuthor() {
-		return Author;
+	public String getBook_name() {
+		return book_name;
 	}
 
-	public void setAuthor(String author) {
-		Author = author;
+	public void setBook_name(String book_name) {
+		this.book_name = book_name;
 	}
 
-	public String getPublication_month() {
-		return Publication_month;
+	public  double getBook_price() {
+		return book_price;
 	}
 
-	public void setPublication_month(String publication_month) {
-		Publication_month = publication_month;
+	public void setBook_price(int book_price) {
+		this.book_price = book_price;
 	}
 
-	public int getPages() {
-		return pages;
-	}
-
-	public void setPages(int pages) {
-		this.pages = pages;
-	}
 	
-	public String Publication() {
-		return "";
-	}
+	
+	
+	//public String Publication() {
+	//	return null;
+	
+	//}
 	
 }
